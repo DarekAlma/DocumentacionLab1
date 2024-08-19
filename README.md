@@ -1,8 +1,30 @@
 # DocumentacionLab1
 ## 2. Topologia de red
 ### Tipos de disposiivos:
-- *Router (WRT300N):*
+- *Router (WRT300N):* Es un router inalámbrico que actúa como el núcleo de la red local (LAN). Permite la conexión de múltiples dispositivos a través de Wi-Fi y también proporciona puertos Ethernet para conexiones cableadas.
 
+-*Cable-Modem-PT (Cable Modem):* El módem es el dispositivo que conecta la red local al proveedor de servicios de internet (ISP). Convierte la señal analógica que viene del cable coaxial (usualmente de la compañía de cable) en una señal digital que puede ser interpretada por el router y los dispositivos conectados.
+
+-*Cloud (Internet):*Es una red global de redes, una infraestructura física y lógica que conecta millones de computadoras, dispositivos, servidores y sistemas alrededor del mundo. Permite que las personas y las organizaciones intercambien información y accedan a servicios desde casi cualquier lugar. El Internet se compone de miles de redes más pequeñas interconectadas que utilizan protocolos de comunicación estandarizados (como TCP/IP) para transmitir datos. Esto incluye desde grandes centros de datos hasta redes locales en hogares y oficinas.
+
+-*Server:* Es un dispositivo o software que proporciona servicios, recursos o datos a otros dispositivos, llamados "clientes", en una red. Los servidores pueden ser computadoras físicas o programas específicos que están configurados para realizar tareas específicas. 
+
+-*Nodos terminales:* Son los dispositivos finales en una red que interactúan directamente con los usuarios. Estos dispositivos se conectan a la red para enviar y recibir datos, permitiendo a los usuarios acceder a aplicaciones, servicios y recursos en la red o en internet.
+
+## 3. Componentes de Red
+### Dispositivos
+- *Router (WRT300N):* Es un router inalámbrico que conecta dispositivos dentro de la red local (LAN), tanto por cable como por Wi-Fi. Actúa como el intermediario entre los dispositivos locales (como la PC, el smartphone y la laptop) y el módem de cable, gestionando el tráfico de datos entre ellos.
+
+Capacidades: Soporta hasta el estándar 802.11n para Wi-Fi, ofreciendo velocidades de hasta 300 Mbps, suficiente para el streaming de contenido de alta definición, como Disney Plus.
+
+  
+-*Cable-Modem-PT (Cable Modem):* Es un módem de cable que conecta la red local (a través del router inalámbrico) a internet. Este dispositivo convierte la señal de cable proporcionada por el proveedor de internet (ISP) en una señal que puede ser utilizada por los dispositivos de la red local (LAN).
+
+-*Cloud (Internet):*Representa la conexión a internet. Es el punto al que se conecta el módem de cable para proporcionar acceso a la red mundial desde la red local. Ademas est una WAN (wide area network) y es el puente para ue dos LAN se comuniquen.
+
+-*Server:*Es un servidor que está proporcionando el servicio de acceso al sitio Disney Plus a los dispositivos de la red local. Este servidor actúa como el punto central desde el cual se distribuye el contenido de Disney Plus a los dispositivos conectados.
+
+-*Nodos terminales:* Los nodos terminales en esta red incluyen la PC, la laptop y el smartphone. Estos dispositivos son los que desean acceder al sitio web de Disney Plus y los que tienen contacto directo con el cliente.
 ## 4. Protocolos de Red
 
 ### Protocolos de Enrutamiento:
