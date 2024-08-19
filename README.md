@@ -1,4 +1,7 @@
 # DocumentacionLab1
+## 2. Topologia de red
+### Tipos de disposiivos:
+- *Router (WRT300N):*
 
 ## 4. Protocolos de Red
 
