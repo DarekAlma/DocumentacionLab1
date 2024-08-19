@@ -23,7 +23,7 @@
 
 - *Cable-Modem-PT (Cable Modem):* Es un módem de cable que conecta la red local (a través del router inalámbrico) a internet. Este dispositivo convierte la señal de cable proporcionada por el proveedor de internet (ISP) en una señal que puede ser utilizada por los dispositivos de la red local (LAN).
 
-    -Configuración: Para la conexion a internet, el módem está conectado a la entrada de cable de coaxial proporcionada por el proveedor de internet.La señal de internet recibida a través del cable coaxial es convertida en una señal de datos que puede ser transmitida por el puerto Ethernet del módem.
+  -Configuración: Para la conexion a internet, el módem está conectado a la entrada de cable de coaxial proporcionada por el proveedor de internet.La señal de internet recibida a través del cable coaxial es convertida en una señal de datos que puede ser transmitida por el puerto Ethernet del módem.
     El puerto Ethernet del módem está conectado al router inalámbrico (WRT300N) mediante un cable Ethernet. Esta conexión permite que el router reciba la señal de internet del módem y la distribuya a los dispositivos de la red local.
 
 -*Cloud (Internet):* Representa la conexión a internet. Es el punto al que se conecta el módem de cable para proporcionar acceso a la red mundial desde la red local. Ademas est una WAN (wide area network) y es el puente para ue dos LAN se comuniquen.
