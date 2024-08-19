@@ -17,7 +17,7 @@
   
   - Configuracion: El router está configurado para asignar direcciones IP automáticamente mediante DHCP (Dynamic Host Configuration Protocol).  Además, la subnet mask utilizada es 255.255.255.0. Esta máscara de subred determina qué parte de la dirección IP identifica la red y qué parte identifica los dispositivos dentro de esa red. En este caso, 255.255.255.0 indica que los primeros tres octetos (192.168.0) identifican la red, mientras que el último octeto identifica los dispositivos individuales en esa red (por ejemplo, .2, .3, etc.).
 
-Para la conexión inalámbrica, el router está configurado en modo mixto (mixed). Esto significa que admite múltiples estándares Wi-Fi (como 802.11b/g/n) simultáneamente, permitiendo que dispositivos más antiguos y más nuevos se conecten a la red sin problemas. El nombre de la red inalámbrica, o SSID (Service Set Identifier), es HomeNetwork. Este es el nombre que los dispositivos verán cuando busquen redes Wi-Fi disponibles, y es al que deben conectarse para acceder a la red.
+  Para la conexión inalámbrica, el router está configurado en modo mixto (mixed). Esto significa que admite múltiples estándares Wi-Fi (como 802.11b/g/n) simultáneamente, permitiendo que dispositivos más antiguos y más nuevos se conecten a la red sin problemas. El nombre de la red inalámbrica, o SSID (Service Set Identifier), es HomeNetwork. Este es el nombre que los dispositivos verán cuando busquen redes Wi-Fi disponibles, y es al que deben conectarse para acceder a la red.
 
 Y para las conexiones guiadas, tienes puertos ethernet, es decir que los dispositivos que estan conectados por cable de cobre (el Pc) usaron cables de par trenzado. Ademas de eso tambien se usa uno de esos puertos ethernet para conectar al router con el modem.
 
