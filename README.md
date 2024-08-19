@@ -1,4 +1,6 @@
 # DocumentacionLab1
+## 1. Introducción
+En este laboratorio ofreceremos una solución al problema de Fernando Pérez y su familia para la visualización de la plataforma disneyplus.com en sus dispositivos personales. Se creó una red simple utilizando: Un servidor, una nube de internet, un módem, un router, y los dispositivos de la casa, como laptops, PC, y celulares. Para esto, configuramos una red local, conectamos todos los dispositivos entre sí para la comunicación con la nube de internet, y configuramos la ruta del servidor para poder llegar a la página de disneyplus.com.
 ## 2. Topologia de red
 ### Tipos de disposiivos:
 - *Router (WRT300N):* Es un router inalámbrico que actúa como el núcleo de la red local (LAN). Permite la conexión de múltiples dispositivos a través de Wi-Fi y también proporciona puertos Ethernet para conexiones cableadas. Soporta hasta el estándar 802.11n para Wi-Fi, ofreciendo velocidades de hasta 300 Mbps, suficiente para el streaming de contenido de alta definición, como Disney Plus
@@ -76,6 +78,26 @@ Los servicios de red sirven para tal como dice el nombre darle servicios a una r
 
 ### Acceso a Internet:
 Los dispositivos en la red interna se conectan a Internet a través de un módem que está conectado a un router. El router utiliza NAT para gestionar la traducción de direcciones IP, permitiendo que los dispositivos internos utilicen una única IP pública para la navegación en Internet. El router también puede manejar la transmisión de datos hacia y desde Internet, asegurando que cada dispositivo reciba los paquetes correspondientes a sus solicitudes. El internet que seria la nube es la que les brinda internet al moden y al servidor, pero se tuvo que habilitar dentro de la nube la comunicacion entre el cable coaxial del moden con el cable de cobre ethernet del servidor para que pudieran intercambiar informacion.
+
+## 6. Arquitectura de red
+1. LAN (Local Area Network)
+La LAN es la red local dentro del hogar de la familia Pérez, compuesta por los dispositivos personales que desean conectarse a internet: PC, una laptop y un celular. Estos dispositivos están conectados al router, que gestiona la comunicación dentro de la red interna.
+
+Componentes de la LAN:
+Router: Es el dispositivo central de la LAN que gestiona el tráfico de datos entre los dispositivos locales y actúa como puerta de enlace hacia la WAN.
+Dispositivos: PC, laptop y celular.
+Conexiones: La PC y la laptop están conectadas vía cable Ethernet al router, mientras que el celular utiliza una conexión inalámbrica (WLAN).
+
+2. WLAN (Wireless Local Area Network)
+El WLAN es la extensión inalámbrica de la LAN, que permite la conexión de dispositivos móviles, como el celular, de forma inalámbrica al router. Esta tecnología facilita la movilidad dentro del hogar, permitiendo que los usuarios se conecten a la red sin necesidad de cables.
+
+3. WAN (Wide Area Network)
+La WAN es la red externa a la que la familia Pérez se conecta para acceder a internet. Esta conexión se realiza a través del módem, que conecta la LAN doméstica al proveedor de servicios de internet y, por tanto, a la nube de internet.
+
+Componentes de la WAN:
+Módem: Convierte las señales digitales del router en señales analógicas que pueden viajar a través de la línea telefónica o de fibra óptica del ISP.
+Nube de Internet: Representa la infraestructura más amplia de internet, que es necesaria para acceder a servidores externos, como el servidor de dis
+
 
 ## 7. Pruebas y Verificación
 
