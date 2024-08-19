@@ -23,22 +23,22 @@
 
 - *Cable-Modem-PT (Cable Modem):* Es un módem de cable que conecta la red local (a través del router inalámbrico) a internet. Este dispositivo convierte la señal de cable proporcionada por el proveedor de internet (ISP) en una señal que puede ser utilizada por los dispositivos de la red local (LAN).
 
-  -Configuración: Para la conexion a internet, el módem está conectado a la entrada de cable de coaxial proporcionada por el proveedor de internet.La señal de internet recibida a través del cable coaxial es convertida en una señal de datos que puede ser transmitida por el puerto Ethernet del módem.
+  - Configuración: Para la conexion a internet, el módem está conectado a la entrada de cable de coaxial proporcionada por el proveedor de internet.La señal de internet recibida a través del cable coaxial es convertida en una señal de datos que puede ser transmitida por el puerto Ethernet del módem.
     El puerto Ethernet del módem está conectado al router inalámbrico (WRT300N) mediante un cable Ethernet. Esta conexión permite que el router reciba la señal de internet del módem y la distribuya a los dispositivos de la red local.
 
--*Cloud (Internet):* Representa la conexión a internet. Es el punto al que se conecta el módem de cable para proporcionar acceso a la red mundial desde la red local. Ademas est una WAN (wide area network) y es el puente para ue dos LAN se comuniquen.
+- *Cloud (Internet):* Representa la conexión a internet. Es el punto al que se conecta el módem de cable para proporcionar acceso a la red mundial desde la red local. Ademas est una WAN (wide area network) y es el puente para ue dos LAN se comuniquen.
 
-    -Configuracion: El módem de cable recibe la señal de internet a través del puerto coaxial. Esta señal es proporcionada por el proveedor de internet y generalmente viaja a través de un cable coaxial desde la pared o una toma de cable en la casa de Fernando Perez, el cable coaxial es adecuado para transmitir señales de  por cable a largas distancias y datos de alta velocidad a través de una sola línea. Es la forma en que el proveedor de internet envía la señal de datos al módem.
+  - Configuracion: El módem de cable recibe la señal de internet a través del puerto coaxial. Esta señal es proporcionada por el proveedor de internet y generalmente viaja a través de un cable coaxial desde la pared o una toma de cable en la casa de Fernando Perez, el cable coaxial es adecuado para transmitir señales de  por cable a largas distancias y datos de alta velocidad a través de una sola línea. Es la forma en que el proveedor de internet envía la señal de datos al módem.
     La "nube" (o más específicamente, la red de internet proporcionada por el ISP) está conectada al servidor mediante un cable de cobre. Esto indica que el servidor está recibiendo directamente la señal de internet sin la intervención de un router.
 
--*Server:* Es un servidor que está proporcionando el servicio de acceso al sitio Disney Plus a los dispositivos de la red local. Este servidor actúa como el punto central desde el cual se distribuye el contenido de Disney Plus a los dispositivos conectados.
+- *Server:* Es un servidor que está proporcionando el servicio de acceso al sitio Disney Plus a los dispositivos de la red local. Este servidor actúa como el punto central desde el cual se distribuye el contenido de Disney Plus a los dispositivos conectados.
 
-    - Configuración: El servidor tiene una dirección IP estática configurada manualmente. Esto significa que la dirección IP del servidor no cambia, a diferencia de una dirección IP asignada dinámicamente mediante DHCP (Dynamic Host Configuration Protocol). 
+  - Configuración: El servidor tiene una dirección IP estática configurada manualmente. Esto significa que la dirección IP del servidor no cambia, a diferencia de una dirección IP asignada dinámicamente mediante DHCP (Dynamic Host Configuration Protocol). 
     La dirección IP estática asegura que el servidor siempre tenga la misma dirección IP en la red, lo cual es crucial porque esta direccion se configura como la dirección DNS en los nodos terminales (como PC, laptop, smartphone).Esto permite que los dispositivos terminales usen el servidor para resolver nombres de dominio internos a direcciones IP. El servidor actúa como un servidor DNS para la red local, resolviendo el nombre de dominio disneyplus.com o www.disneyplus.com  
 
--*Nodos terminales:* Los nodos terminales en esta red incluyen la PC, la laptop y el smartphone. Estos dispositivos son los que desean acceder al sitio web de Disney Plus y los que tienen contacto directo con el cliente.
+- *Nodos terminales:* Los nodos terminales en esta red incluyen la PC, la laptop y el smartphone. Estos dispositivos son los que desean acceder al sitio web de Disney Plus y los que tienen contacto directo con el cliente.
 
-  -Configuración : El Pc Está conectado al router inalámbrico (WRT300N) mediante un cable de cobre (cable de par trenzado). Esto proporciona una conexión física estable y rápida entre el PC y el router.
+  - Configuración : El Pc Está conectado al router inalámbrico (WRT300N) mediante un cable de cobre (cable de par trenzado). Esto proporciona una conexión física estable y rápida entre el PC y el router.
   La laptop se conecta al router inalámbrico (WRT300N) usando un módulo inalámbrico Linksys-WPC300N. Este módulo proporciona una interfaz Wi-Fi de 2.4GHz adecuada para conectarse a redes inalámbricas.
   El smartphone se conecta al router inalámbrico (WRT300N) activando el puerto de estado en inalámbrico. Esto implica que el dispositivo simplemente se conecta a la red Wi-Fi disponible.
 
