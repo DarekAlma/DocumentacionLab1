@@ -34,16 +34,18 @@
 - *Server:* Es un servidor que está proporcionando el servicio de acceso al sitio Disney Plus a los dispositivos de la red local. Este servidor actúa como el punto central desde el cual se distribuye el contenido de Disney Plus a los dispositivos conectados.
 
   - Configuración: El servidor tiene una dirección IP estática configurada manualmente. Esto significa que la dirección IP del servidor no cambia, a diferencia de una dirección IP asignada dinámicamente mediante DHCP (Dynamic Host Configuration Protocol). 
-    La dirección IP estática asegura que el servidor siempre tenga la misma dirección IP en la red, lo cual es crucial porque esta direccion se configura como la dirección DNS en los nodos terminales (como PC, laptop, smartphone).Esto permite que los dispositivos terminales usen el servidor para resolver nombres de dominio internos a direcciones IP. El servidor actúa como un servidor DNS para la red local, resolviendo el nombre de dominio disneyplus.com o www.disneyplus.com  
+    La dirección IP estática asegura que el servidor siempre tenga la misma dirección IP en la red, lo cual es crucial porque esta direccion se configura como la dirección DNS en los nodos terminales (como PC, laptop, smartphone).Esto permite que los dispositivos terminales usen el servidor para resolver nombres de dominio internos a direcciones IP. El servidor actúa como un servidor DNS para la red local, resolviendo el nombre de dominio "disneyplus.com" 
 
 - *Nodos terminales:* Los nodos terminales en esta red incluyen la PC, la laptop y el smartphone. Estos dispositivos son los que desean acceder al sitio web de Disney Plus y los que tienen contacto directo con el cliente.
 
   - Configuración : El Pc Está conectado al router inalámbrico (WRT300N) mediante un cable de cobre (cable de par trenzado). Esto proporciona una conexión física estable y rápida entre el PC y el router.
-  La laptop se conecta al router inalámbrico (WRT300N) usando un módulo inalámbrico Linksys-WPC300N. Este módulo proporciona una interfaz Wi-Fi de 2.4GHz adecuada para conectarse a redes inalámbricas.
-  El smartphone se conecta al router inalámbrico (WRT300N) activando el puerto de estado en inalámbrico. Esto implica que el dispositivo simplemente se conecta a la red Wi-Fi disponible.
 
-  Para los dos ultimos, es decir los que estan conectados de forma inhalambrica tienen las siguientes caracteristicas: La red Wi-Fi no requiere autenticación, ya que el router está configurado para permitir conexiones sin necesidad de credenciales asi que tienen la autenticacion desactivada y el nombre de la SSID es HomeNetwork.
-    
+     La laptop se conecta al router inalámbrico (WRT300N) usando un módulo inalámbrico Linksys-WPC300N. Este módulo proporciona una interfaz Wi-Fi de 2.4GHz adecuada para conectarse a redes inalámbricas.
+
+    El smartphone se conecta al router inalámbrico (WRT300N) activando el puerto de estado en inalámbrico. Esto implica que el dispositivo simplemente se conecta a la red Wi-Fi disponible.
+
+    Para los dos ultimos, es decir los que estan conectados de forma inhalambrica tienen las siguientes caracteristicas: La red Wi-Fi no requiere autenticación, ya que el router está configurado para permitir conexiones sin necesidad de credenciales asi que tienen la autenticacion desactivada y el nombre de la SSID es HomeNetwork.
+
     Ademas los tres tiene una dirección IP estática asignada manualmente, esto para garantizar que el DNS fuera la misma direccion ip del servidor y ademas para garantizar que la dirección del default gateway en el fuera misma que la dirección IP del router inalámbrico esto porque el router esta conectado al modem, que actúa como el punto de salida para el tráfico que necesita ser enviado fuera de la red local (hacia internet). 
 
 
@@ -75,7 +77,7 @@ Los servicios de red sirven para tal como dice el nombre darle servicios a una r
 ### Acceso a Internet:
 Los dispositivos en la red interna se conectan a Internet a través de un módem que está conectado a un router. El router utiliza NAT para gestionar la traducción de direcciones IP, permitiendo que los dispositivos internos utilicen una única IP pública para la navegación en Internet. El router también puede manejar la transmisión de datos hacia y desde Internet, asegurando que cada dispositivo reciba los paquetes correspondientes a sus solicitudes. El internet que seria la nube es la que les brinda internet al moden y al servidor, pero se tuvo que habilitar dentro de la nube la comunicacion entre el cable coaxial del moden con el cable de cobre ethernet del servidor para que pudieran intercambiar informacion.
 
-## 8. Pruebas y Verificación
+## 7. Pruebas y Verificación
 
 Pruebas de Conectividad: Mediante cisco packet tracer se puede acceder a la opcion de simulacion, cuando estamos dentro de esta opcion podemos mandar mensajes entre dispositivos para comprar la conectectividad entre estos y verificar si efectivamente se estan comunicando entre si.
 Esto resulto muy util en el momento de verificar si el servidor se podia comunicar con los dispositivos en la casa, si esta comunicación era posible, la pagina de www.disneyplus.com podia ser abierta en los dispositivos. De igual manera si se estaba en la opcion de simulacion y se intentaba acceder a la pagina se podia ver el proceso de comunicacion entre el dispositivo y el servidor, gracias a esto se podria apreciar si el servicio fallaba cual era la razon de conectividad que hacia que no se comunicaran. 
@@ -88,3 +90,44 @@ De igual manera se hicieron dentro de los dispositivos se accedio a desktop y ah
 En este caso se pingea a la ip del servidor, y se muestra que se consiguieron 4/4 reply por parte del servidor hacia la laptop.
 
 ![](imagenesWiki/pingLaptopServer.png)
+
+## 8. Conclusiones 
+
+### Evaluación del Rendimiento:
+
+- *Objetivo Cumplido:* La red está configurada para permitir a Fernando Pérez y sus familiares navegar por el sitio web de Disney+ utilizando sus computadoras personales y teléfonos celulares. La configuración actual asegura que todos los dispositivos tengan acceso a internet a través de la red local, cumpliendo con el objetivo de proporcionar acceso a sitios web desde múltiples dispositivos.
+- *Conexiones Estables:* La conexión física (Ethernet) para la PC y la conexión inalámbrica para la laptop y el smartphone están funcionando correctamente. Los dispositivos están correctamente conectados al router, que gestiona el tráfico entre los dispositivos y el router al modem que esta conectado por un cable coaxial al internet.
+- *Dirección IP y DNS:* La configuración de IP estática para el servidor y la utilización del servidor como DNS han sido efectivas para resolver nombres de dominio internos y proporcionar acceso a internet. La dirección IP estática del servidor evita problemas de resolución de nombres causados por cambios en las direcciones IP.
+  
+### Desafíos Encontrados:
+
+- *Comunicación de Datos:* La comunicación entre el servidor y los nodos terminales fue un desafío. Inicialmente, el servidor estaba configurado para obtener una dirección IP dinámica mediante DHCP, lo que causaba problemas cuando la dirección IP del servidor cambiaba, ya que no era la misma que se tenia en los nodos terminales como DNS
+
+### Posibles Mejoras
+
+*1. Implementación de Seguridad en la Red Wi-Fi:* 
+  - Problema: La red Wi-Fi no tiene autenticación, lo que podría representar un riesgo de seguridad.
+    
+  - Mejora: Habilitar la autenticación Wi-Fi utilizando WPA2 o WPA3 y configurar una contraseña fuerte para la red inalámbrica. Esto protegerá la red contra accesos no autorizados.
+
+*2. Uso de un Router para Gestión de la Red:*
+  - Problema: El servidor está conectado directamente a internet, lo que podría exponerlo a riesgos de seguridad.
+    
+  - Mejora: Considerar la adición de un router entre el módem y el servidor para gestionar el tráfico de la red local, proporcionar una capa adicional de seguridad y simplificar la configuración de red. El router podría manejar la asignación de direcciones IP a los dispositivos y ofrecer protección adicional contra amenazas externas.
+
+## 9. Referencias 
+cloudfare.inc, «¿Qué es DNS? | Cómo funciona», Cloudfare. https://www.cloudflare.com/es-es/learning/dns/what-is-dns/
+
+S. De Luz, «Qué es el DHCP, funcionamiento y ejemplos de configuración», RedesZone, 6 de mayo de 2024. [En línea]. Disponible en: https://www.redeszone.net/tutoriales/internet/que-es-protocolo-dhcp/
+
+D. Vargas, «Protocolo TCP: definición y funcionamiento», Tutoriales Hostinger, 30 de agosto de 2023. https://www.hostinger.es/tutoriales/protocolo-tcp
+
+J. M. M, «Router WRT300N», PC Solución, 12 de abril de 2023. https://pc-solucion.es/terminos/router-wrt300n/
+
+E. R. Moraguez, «Qué es un cablemódem: ¿cómo funciona y para qué sirve?‍ | LovTechnology», LovTechnology, 28 de febrero de 2023. https://lovtechnology.com/que-es-un-cablemodem-como-funciona-y-para-que-sirve/
+
+Tecnoadmin, «¿Qué es un Servidor? Características, Tipos de Servidor y Ejemplos», TecnoMagazine, 30 de enero de 2020. https://tecnomagazine.net/servidor/
+
+Y. Fernández, «SSID de red: qué es, cómo encontrar el tuyo y cómo cambiarlo», Xataka, 8 de noviembre de 2023. https://www.xataka.com/basics/ssid-red-que-como-encontrar-tuyo-como-cambiarlo
+
+B. V, «¿Qué es una dirección IP? Funcionamiento, tipos y protección», Tutoriales Hostinger, 20 de octubre de 2023. https://www.hostinger.mx/tutoriales/que-es-una-direccion-ip
