@@ -3,8 +3,9 @@
 En este laboratorio ofreceremos una solución al problema de Fernando Pérez y su familia para la visualización de la plataforma disneyplus.com en sus dispositivos personales. Se creó una red simple utilizando: Un servidor, una nube de internet, un módem, un router, y los dispositivos de la casa, como laptops, PC, y celulares. Para esto, configuramos una red local, conectamos todos los dispositivos entre sí para la comunicación con la nube de internet, y configuramos la ruta del servidor para poder llegar a la página de disneyplus.com.
 ## 2. Topologia de red
 La topología utilizada en esta práctica es una topología en estrella. En este tipo de topología, todos los dispositivos de la red están conectados a un nodo central, que en este caso es el router
-### Tipos de disposiivos:
-- *Router (WRT300N):* Es un router inalámbrico que actúa como el núcleo de la red local (LAN). Permite la conexión de múltiples dispositivos a través de Wi-Fi y también proporciona puertos Ethernet para conexiones cableadas. Soporta hasta el estándar 802.11n para Wi-Fi, ofreciendo velocidades de hasta 300 Mbps, suficiente para el streaming de contenido de alta definición, como Disney Plus
+![](imagenesWiki/WhatsApp Image 2024-08-17 at 0.07.17 PM.png)
+### Tipos de disposiivos:-
+- *Router (WRT300N):* Es un ro-uter inalámbrico que actúa como el núcleo de la red local (LAN). Permite la conexión de múltiples dispositivos a través de Wi-Fi y también proporciona puertos Ethernet para conexiones cableadas. Soporta hasta el estándar 802.11n para Wi-Fi, ofreciendo velocidades de hasta 300 Mbps, suficiente para el streaming de contenido de alta definición, como Disney Plus
 
 - *Cable-Modem-PT (Cable Modem):* El módem es el dispositivo que conecta la red local al proveedor de servicios de internet (ISP). Convierte la señal analógica que viene del cable coaxial (usualmente de la compañía de cable) en una señal digital que puede ser interpretada por el router y los dispositivos conectados. Actúa como el puente entre la red del ISP y la red local, asegurando que los datos puedan fluir desde y hacia internet. Es esencial para la transmisión de datos entre dos LAN ya que conecta a la primera con una WAN que despues por otro dispositivo de conecta a la segunda LAN
 
