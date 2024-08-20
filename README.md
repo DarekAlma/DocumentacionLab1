@@ -1,4 +1,7 @@
 # DocumentacionLab1
+
+## Miembros: Tomas Barrios Guavara, Valentina Ruiz Torres y Darek Aljuri Martinez
+
 ## 1. Introducción
 En este laboratorio ofreceremos una solución al problema de Fernando Pérez y su familia para la visualización de la plataforma disneyplus.com en sus dispositivos personales. Se creó una red simple utilizando: Un servidor, una nube de internet, un módem, un router, y los dispositivos de la casa, como laptops, PC, y celulares. Para esto, configuramos una red local, conectamos todos los dispositivos entre sí para la comunicación con la nube de internet, y configuramos la ruta del servidor para poder llegar a la página de disneyplus.com.
 ## 2. Topologia de red
@@ -16,6 +19,8 @@ La topología utilizada en esta práctica es una topología en estrella. En este
 - *Server:* Es un dispositivo o software que proporciona servicios, recursos o datos a otros dispositivos, llamados "clientes", en una red. Los servidores pueden ser computadoras físicas o programas específicos que están configurados para realizar tareas específicas. 
 
 - *Nodos terminales:* Son los dispositivos finales en una red que interactúan directamente con los usuarios. Estos dispositivos se conectan a la red para enviar y recibir datos, permitiendo a los usuarios acceder a aplicaciones, servicios y recursos en la red o en internet.
+
+![](imagenesWiki/topologiadered.png)
 
 ## 3. Componentes de Red
 ### Dispositivos
