@@ -4,6 +4,8 @@ En este laboratorio ofreceremos una solución al problema de Fernando Pérez y s
 ## 2. Topologia de red
 La topología utilizada en esta práctica es una topología en estrella. En este tipo de topología, todos los dispositivos de la red están conectados a un nodo central, que en este caso es el router
 
+![Casa Fernando Perez](imagenesWiki/topologiaFerandnoPerez.png)
+
 ### Tipos de disposiivos:-
 - *Router (WRT300N):* Es un ro-uter inalámbrico que actúa como el núcleo de la red local (LAN). Permite la conexión de múltiples dispositivos a través de Wi-Fi y también proporciona puertos Ethernet para conexiones cableadas. Soporta hasta el estándar 802.11n para Wi-Fi, ofreciendo velocidades de hasta 300 Mbps, suficiente para el streaming de contenido de alta definición, como Disney Plus
 
